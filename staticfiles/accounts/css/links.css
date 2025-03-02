@@ -1,0 +1,55 @@
+.link-type-1 {
+    position: relative;
+    z-index: 0;
+    padding: 11px 23px;
+    border-radius: 20px;
+    overflow: hidden;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    cursor: pointer;
+}
+.link-type-1 svg:last-child, .link-type-1 img:last-child {
+    margin-left: 4px;
+}
+.link-type-1 svg:first-child, .link-type-1 img:first-child {
+    margin-right: 4px;
+}
+.link-type-1:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+    background: linear-gradient(136.78deg, #FF005C 36.04%, #990037 88.56%);
+}
+.link-type-1:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    transition: .3s;
+    background: linear-gradient(316.78deg, #FF005C 36.04%, #990037 88.56%);
+}
+@media (min-width: 1400px) {
+    .link-type-1:hover:after {
+        opacity: 1;
+    }
+    .link-type-1:hover:before {
+        opacity: 0;
+    }
+}

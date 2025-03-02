@@ -1,0 +1,41 @@
+.banner-business {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 20px 44px 20px 30px;
+}
+.banner-business__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28.8462px;
+    line-height: 36px;
+    text-align: right;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.banner-business__bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-business__link {
+    padding: 12px 25px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--white);
+    background: #0179FF;
+    border-radius: 20px;
+    border-color: #0179FF;
+}
+@media (min-width: 1400px) {
+    .banner-business__link:hover {
+        color: #0179FF;
+        background: var(--white);
+
+    }
+}

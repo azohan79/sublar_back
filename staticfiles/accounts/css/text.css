@@ -1,0 +1,124 @@
+.tt1 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--grey1);
+}
+.tt2 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey1);
+}
+.tt3 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--grey1);
+}
+.tt4 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.tt5 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+}
+.tt6 {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+.bold-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #21262F;
+}
+.red {
+    color: var(--red) !important;
+}
+.green {
+    color: var(--green) !important;
+}
+.white {
+    color: var(--white) !important;
+}
+.light-light-grey {
+    color: var(--light-light-grey) !important;
+}
+.thin {
+    font-weight: 400;
+}
+.text-helper h2 {
+    padding: 15px 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey1);
+}
+.text-helper p {
+    padding: 12px 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey1);
+}
+.text-helper time {
+    padding: 5px 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--grey2);
+}
+.text-helper > img {
+    max-width: 100%;
+    padding: 10px 0;
+}
+.text-helper p > img {
+    max-width: 50%;
+    width: 100%;
+    padding-right: 24px;
+}
+.text-helper > *:first-child {
+    padding-top: 0;
+}
+.text-helper > *:last-child {
+    padding-bottom: 0;
+}
+.text-helper .link-type-1 {
+    display: inline-flex;
+    width: auto;
+    margin: 10px auto;
+}
+.mt30 {
+    margin-top: 30px !important;
+}
+@media (max-width: 450px) {
+    .text-helper p > img {
+        padding: 10px 0;
+        max-width: 100%;
+    }
+}

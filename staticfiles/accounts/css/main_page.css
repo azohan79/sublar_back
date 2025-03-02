@@ -1,0 +1,165 @@
+.main-banner1 {
+    height: 260px;
+    padding-top: 70px;
+    padding-right: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.main-banner1 .banner-business__title {
+    width: 300px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30px;
+}
+.main-banner1 .banner-business__bottom {
+    margin-top: 10px;
+}
+.main-activity {
+    padding: 12px 10px 12px 15px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #21262F;
+    border-radius: 15px;
+    position: relative;
+}
+.main-activity__block {
+    width: calc(100% - 72px - 8px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.main-activity__diagram {
+    width: 72px;
+    height: 72px;
+    position: relative;
+}
+.main-activity__diagram-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    white-space: nowrap;
+}
+.main-activity__diagram-item {
+    width: 100%;
+    height: 100%;
+}
+.main-activity__diagram-item canvas {
+    user-select: none;
+    pointer-events: none;
+    margin-top: -5px;
+}
+.main-activity__diagram-element {
+
+}
+.main-activity__info {
+    margin-right: 10px;
+}
+.main-activity__info-title {
+    margin-bottom: 8px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+}
+.main-activity__info-text {
+    /*width: 251px;*/
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white);
+}
+.main-activity .wallet-card__btn-item {
+    padding: 7px 12px;
+    width: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.0802px;
+    line-height: 14px;
+    color: #FFE388;
+    border-color: #FFE388;
+    background: transparent;
+}
+.main-banner2 {
+    min-height: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 37px;
+    padding-right: 20px;
+}
+.main-banner2 .banner-business__title {
+    width: 205px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--white);
+    text-align: left;
+}
+.main-banner2 .banner-business__bottom {
+    margin-top: 0;
+}
+@media (min-width: 1400px) {
+    .main-activity .wallet-card__btn-item:hover {
+        background: #FFE388;
+        color: var(--grey1);
+    }
+    .main-banner2 .banner-business__link:hover {
+        background: transparent;
+        color: var(--white);
+        border-color: var(--white);
+
+    }
+}
+@media (max-width: 450px) {
+    .main-banner2 .banner-business__title {
+        font-size: 21px;
+        width: 170px;
+    }
+    .main-banner2 .banner-business__link {
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+
+    .main-banner2 {
+        padding-left: 20px;
+    }
+    .main-activity__diagram {
+        width: 57px;
+        height: 57px;
+    }
+    .main-activity__block {
+        width: calc(100% - 57px - 5px);
+    }
+    .main-activity__diagram-text {
+        font-weight: 500;
+        font-size: 12.2114px;
+        line-height: 15px;
+    }
+    .main-activity__info-title {
+        font-size: 10px;
+        line-height: 140%;
+    }
+    .main-activity__info-text {
+        font-size: 9px;
+        line-height: 140%;
+    }
+}

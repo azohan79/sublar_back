@@ -1,0 +1,277 @@
+.main-bonuses {
+    min-height: 100px;
+    width: 100%;
+    background: var(--grey1);
+    border-radius: 15px;
+    padding: 16px 14px 14px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.command-bonus {
+    background: #0B0E29;
+    border-radius: 15px;
+    padding: 15px 20px 10px 33px;
+    min-height: 120px;
+}
+
+.main-bonuses2 .main-bonuses__info {
+    width: 175px;
+}
+.command-bonus .main-bonuses__info {
+    width: 135px;
+}
+
+.main-bonuses2 {
+    background: #0B0E29;
+    border-radius: 15px;
+    min-height: 120px;
+}
+.main-bonuses__list-item-bottom {
+    margin-top: 8px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--light-grey);
+    width: 77px;
+}
+.main-bonuses__list-item.active .main-bonuses__list-item-bottom {
+    color: var(--white);
+}
+
+.main-bonuses2 .main-bonuses__list {
+    width: calc(77px * 3 + 13px * 3);
+    justify-content: flex-end;
+}
+.main-bonuses2 .main-bonuses__list-item {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-bonuses2 .main-bonuses__list-img {
+    width: 35px;
+}
+.main-bonuses__info {
+    width: 145px;
+}
+.main-bonuses__info-title {
+    margin-bottom: 9px;
+}
+.main-bonuses__list-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+.main-bonuses__list-item-head-text {
+    margin-left: 5px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white);
+}
+
+.main-bonuses__info-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.main-bonuses__list {
+    width: calc(50px * 5 + 8px * 5);
+    margin: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.main-bonuses__list-helper {
+    padding: 4px;
+}
+.main-bonuses__list-item {
+    width: 50px;
+    position: relative;
+}
+.main-bonuses__list-img {
+    width: 100%;
+}
+.main-bonuses__list-img img {
+    width: 100%;
+}
+.main-bonuses__list-img img:first-child {
+    display: block;
+}
+.main-bonuses__list-img img:last-child {
+    display: none;
+}
+.main-bonuses__list-item.active .main-bonuses__list-img img:first-child {
+    display: none;
+}
+.main-bonuses__list-item.active .main-bonuses__list-img img:last-child {
+    display: block;
+}
+.main-bonuses__list-num {
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--red);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: var(--white);
+}
+.command-bonus__list {
+    width: calc(250px + 7px + 26px);
+}
+.command-bonus__list-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.command-bonus__list-row:last-child {
+    margin-bottom: 0;
+}
+.command-bonus__list-row.ended .command-bonus__list-block {
+    opacity: .5;
+}
+.command-bonus__list-row.ended .command-bonus__list-img {
+    display: block;
+}
+.command-bonus__list-block {
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid var(--grey1);
+    border-radius: 10px;
+    padding: 6px 11px 6px 15px;
+}
+.command-bonus__list-block-title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white);
+    width: 62px;
+}
+.command-bonus__list-block-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.command-bonus__list-block-col:nth-child(2) {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--white);
+}
+.command-bonus__list-block-col:nth-child(3) {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: var(--white);
+}
+.command-bonus__list-block-col:nth-child(4) {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: var(--white);
+}
+.command-bonus__list-block-col:nth-child(2) div {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6px;
+    line-height: 7px;
+    color: var(--white);
+}
+.command-bonus__list-block-col:nth-child(3) div {
+    margin-top: 3px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--white);
+}
+.command-bonus__list-block-col:nth-child(4) div {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: var(--white);
+}
+.command-bonus__list-img {
+    width: 26px;
+    display: none;
+}
+.command-bonus__list-img img {
+    width: 100%;
+}
+
+@media (max-width: 1399px) {
+    .main-bonuses {
+        flex-wrap: wrap;
+    }
+    .main-bonuses__info {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .main-bonuses__list {
+        width: calc(100% + 8px);
+        margin: -4px;
+    }
+    .main-bonuses2 .main-bonuses__info {
+        width: 100%;
+    }
+    .main-bonuses2 .main-bonuses__list {
+        justify-content: flex-start;
+    }
+    .command-bonus .main-bonuses__info {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .command-bonus {
+        padding-left: 20px;
+    }
+    .command-bonus__list-block {
+        width: calc(100% - 5px - 20px);
+    }
+    .command-bonus__list-img {
+        width: 20px;
+    }
+    .command-bonus__list {
+        width: 100%;
+    }
+}

@@ -1,0 +1,17 @@
+.education-start-btn {
+    padding: 12px 57px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 20px;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+}
+@media (min-width: 1400px) {
+    .education-start-btn:hover {
+        color: var(--red);
+    }
+}

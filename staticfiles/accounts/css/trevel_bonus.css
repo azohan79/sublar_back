@@ -1,0 +1,114 @@
+.travel-bonus {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+.travel-bonus-bg {
+    background-position: top right !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.travel-bonus__head {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #00C7FF;
+    margin-bottom: 12px;
+}
+.travel-bonus__info {
+    margin-bottom: 50px;
+}
+.travel-bonus__info-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 11px;
+}
+.travel-bonus__info-row:last-child {
+    margin-bottom: 0;
+}
+.travel-bonus__info-col:nth-child(1) {
+    width: 95px;
+}
+.travel-bonus__info-value {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey1);
+    padding: 6px 18px;
+    border: 1px solid #00C7FF;
+    border-radius: 20px;
+    background: var(--white);
+}
+.travel-bonus__issues-head {
+    margin-bottom: 11px;
+}
+.travel-bonus2 {
+    width: 100%;
+    background: #0B0E29;
+    border-radius: 15px;
+    min-height: 120px;
+    padding: 17px 27px 10px 33px;
+}
+.travel-bonus2__head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.travel-bonus2__head-title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.685px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.travel-bonus2__head-btn {
+    display: inline-block;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFE388;
+    padding: 5px 13px;
+    border: 1px solid #FFE388;
+    border-radius: 20px;
+    background: transparent;
+}
+.time-period__head-line-block {
+
+}
+.time-period__head-line-block-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.time-period__head-line-block-text {
+    position: absolute;
+    bottom: calc(100% + 3px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--white);
+    white-space: nowrap;
+}
+.travel-bonus2__body {
+    padding-top: 40px;
+}

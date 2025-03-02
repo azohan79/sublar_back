@@ -1,0 +1,17 @@
+:root {
+    --white: #FFFFFF;
+    --grey1: #393F49;
+    --grey2: #5E6572;
+    --light-light-grey: #BEC5D7;
+    --light-grey2: #EAEDF3;
+    --red: #FF015C;
+    --c01: #F6F6FA;
+    --button1: #5E5E7B;
+    --light-grey: #7F8698;
+    --green: #00BB29;
+    --black: #000000;
+
+
+    /*--font-main: ;*/
+    --font-secondary: 'HelveticaNeueCyr';
+}

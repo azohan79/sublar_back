@@ -1,0 +1,54 @@
+.popup-info {
+    width: 720px;
+    padding: 38px 50px 30px 40px;
+    background: var(--c01);
+    border-radius: 15px;
+}
+.present-popup {
+    padding: 20px 0;
+}
+.popup-info__head {
+
+}
+.popup-info__head-title {
+
+}
+.popup-info__head-date {
+
+}
+.popup-info__body {
+
+}
+.present-popup .present__bg {
+    width: 325px;
+}
+.popup-info__bottom {
+    width: 100%;
+    margin-top: 35px;
+}
+.popup-info__bottom .materials-list {
+    max-width: 407px;
+}
+.btn-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .popup-info {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+}
+@media (max-width: 450px) {
+    .present-popup {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .present-popup .present {
+        border-radius: 0;
+    }
+
+}

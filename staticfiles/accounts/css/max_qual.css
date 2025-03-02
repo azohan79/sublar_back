@@ -1,0 +1,91 @@
+.max-qual {
+    position: relative;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px 12px 20px;
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.max-qual__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-qual__info {
+
+}
+.max-qual__info-title {
+    padding-left: 10px;
+    margin-bottom: 8px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #21262F;
+}
+.max-qual__info-value {
+
+}
+.max-qual__cash {
+    padding-left: 10px;
+}
+.max-qual__cash-title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    margin-bottom: 1px;
+}
+.max-qual__cash-value {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: var(--white);
+}
+.max-qual__btn .status__link{
+    width: auto;
+    padding: 7px 14px;
+}
+@media (max-width: 1399px) {
+    .max-qual__cash-value {
+        font-size: 24px;
+    }
+    .max-qual__cash-title {
+        font-size: 12px;
+    }
+    .max-qual__cash {
+        padding-left: 0;
+    }
+    .max-qual {
+        padding-left: 10px;
+        padding-right: 5px;
+    }
+    .max-qual__btn .status__link {
+        font-size: 10px;
+    }
+    .max-qual__btn .status__link img {
+        width: 16px;
+    }
+}
+@media (max-width: 389px) {
+    .max-qual__row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .max-qual__btn .status__link {
+        margin-top: 10px;
+    }
+    .max-qual__row:last-child {
+        margin-top: 15px;
+    }
+}
