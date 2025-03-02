@@ -1,0 +1,60 @@
+{% load static %}
+{% comment %}
+Ожидается, что переменная tree – это словарь с ключами:
+  user, left, right и т.д.
+{% endcomment %}
+{% if tree %}
+<div class="team-right-main-wrap">
+  <div class="team-crol-main">
+      <div class="team-main-wrap-col-1">
+
+          <div class="team-main-wrap-col-2">
+            <!-- Карточка спонсора -->
+              <div class="team-main-card-1">
+                  <div class="team-main-card-1-col">
+                      <span class="team-main-card-span">
+                        Вы
+                      </span>
+                      <div class="team-main-card-col-cont">
+                          <span class="tema-span">
+                            {% if tree.user.level %}{{ tree.user.level }}{% else %}0{% endif %}
+                          </span>
+                          <p>линия</p>
+                      </div>
+                  </div>
+                  <div class="team-main-card-col-2">
+                    <img class="tree-profile-img" src="{{ tree.user.profile_photo.url }}" alt="{{ tree.user.full_name }}">
+                          class="team-card-main-img">
+                      <p class="team-main-card-col-2-p">
+                        {{ tree.user.id }}
+                      </p>
+                  </div>
+                  <p class="team-card-main-text">
+                    {{ tree.user.full_name }}
+                  </p>
+                  <div class="team-main-card-col-3">
+                      <div class="team-main-card-img">
+                          <img src="{% static 'portal/icons/main/team-main-card-s2.svg' %}" alt="alt">
+                      </div>
+                      <p>{{ tree.user.get_qualification_display|default:"Не задан" }}</p>
+                  </div>
+                  <div class="team-main-card-col-4">
+                      <p>ГО</p>
+                      <div class="team-main-card-col-div-4"><input disabled type="text" value="{{ tree.user.go|default:"—" }}"></div>
+                  </div>
+              </div>
+<!-- Конец карточки спонсора -->
+
+  <!-- Рекурсивный вывод дочерних узлов -->
+  {% if tree.left or tree.right %}
+  <ul class="tree-children">
+    {% if tree.left %}
+      <li>{% include "accounts/partials/team_tree.html" with tree=tree.left %}</li>
+    {% endif %}
+    {% if tree.right %}
+      <li>{% include "accounts/partials/team_tree.html" with tree=tree.right %}</li>
+    {% endif %}
+  </ul>
+  {% endif %}
+</div>
+{% endif %}

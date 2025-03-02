@@ -1,0 +1,244 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+{% load tz %}  {# Для тегов времени, если нужно #}
+
+{% block title %}Личный кабинет{% endblock %}
+
+{% block content %}
+<section class="main">
+    <div class="main-container">
+        <div class="main-left">
+            <div class="main-left-content">
+                <ul class="main-left-list">
+                    <li class="main-left-item left-active">
+                        <div class="main-left-active"></div>
+                        <a href="{% url 'dashboard' %}" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-1.svg' %}" alt="left">
+                            <span class="main-left-span">Главная</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-2.svg' %}" alt="left">
+                            <span class="main-left-span">Моя карьера</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="{% url 'team' %}" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-3.svg' %}" alt="left">
+                            <span class="main-left-span">Моя команда</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-4.svg' %}" alt="left">
+                            <span class="main-left-span">Промо и розыгрыши</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-5.svg' %}" alt="left">
+                            <span class="main-left-span">Новости и публикации</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-6.svg' %}" alt="left">
+                            <span class="main-left-span">Рекламные материалы</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-7.svg' %}" alt="left">
+                            <span class="main-left-span">Мой профиль</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-8.svg' %}" alt="left">
+                            <span class="main-left-span">Мои заказы</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-9.svg' %}" alt="left">
+                            <span class="main-left-span">Мой кошелек</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="main-card-main-2">
+                <div class="main-left-content-2">
+                    <div class="main-left-card">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-1.svg' %}" alt="left">
+                            <span class="main-left-span">Главная</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-2">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-2.svg' %}" alt="left">
+                            <span class="main-left-span">Моя карьера</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-3">
+                        <a href="{% url 'team' %}" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-3.svg' %}" alt="left">
+                            <span class="main-left-span">Моя команда</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-4">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-4.svg' %}" alt="left">
+                            <span class="main-left-span">Промо и розыгрыши</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-5">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-5.svg' %}" alt="left">
+                            <span class="main-left-span">Новости и публикации</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-6">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-6.svg' %}" alt="left">
+                            <span class="main-left-span">Рекламные материалы</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-7">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-7.svg' %}" alt="left">
+                            <span class="main-left-span">Мой профиль</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-8">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-8.svg' %}" alt="left">
+                            <span class="main-left-span">Мои заказы</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-9">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-9.svg' %}" alt="left">
+                            <span class="main-left-span">Мой кошелек</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="main-card-main">
+                    <div class="main-right-cards">
+                        <div class="main-cards-wrap-1">
+                            <div class="main-card-1">
+                                <div class="main-card-1-col">
+                                    {# Отображаем квалификацию пользователя, используя поле qualification #}
+                                    <h3 class="main-card-1-title">
+                                        {{ user.get_qualification_display }}
+                                    </h3>
+                                    <button class="main-card-1-btn">
+                                        {{ user.get_partner_type_display }}
+                                    </button>
+                                </div>
+                                <div class="main-card-1-col-cont">
+                                    <div class="main-card-1-col-cont-pv">
+                                        <span class="main-card-1-col-span">Мои PV</span>
+                                        <span class="main-card-1-col-span-2">{{ user.pv }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-card-2-wrap">
+                                <div class="main-card-2">
+                                    <div class="main-card-2-col">
+                                        <div class="main-card-col-text">
+                                            <span class="main-card-col-span-text">Кошелек</span>
+                                            <h3 class="main-card-col-text-title">
+                                                {{ user.wallet_balance|floatformat:2 }} ₽
+                                            </h3>
+                                        </div>
+                                        <div class="main-card-2-img">
+                                            <img src="{% static 'portal/icons/main/Info.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="main-card-wrap-2-btn">Использовать</button>
+                                </div>
+                                <div class="main-card-2-2">
+                                    <div class="main-card-2-col">
+                                        <div class="main-card-col-text">
+                                            <span class="main-card-col-span-text">Бинарный счет</span>
+                                            <h3 class="main-card-col-text-title">
+                                                {{ user.binary_balance|floatformat:2 }} ₽
+                                            </h3>
+                                        </div>
+                                        <div class="main-card-2-img">
+                                            <img src="{% static 'portal/icons/main/Info.svg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    <button class="main-card-wrap-2-btn">Использовать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-cards-wrap-2">
+                        <div class="main-card-3">
+                            <div class="main-card-3-col">
+                                <div class="main-card-indicator">
+                                    <div class="indicator"></div>
+                                </div>
+                                <div class="main-card-indicator-text">
+                                    <p>{% now "j" %} {% now "F" %}</p>
+                                    <p>{% now "j" %} {% now "F" %}</p>
+                                </div>
+                            </div>
+                            <div class="main-card-3-col-2">
+                                <p class="main-card-col-3-descr">
+                                    Сегодня <span>{% now "j" %}</span> {% now "F" %}  
+                                </p>
+                                <div class="main-card-3-col-3-cont">
+                                    <p>До конца периода </p>
+                                    <button class="main-card-3-col-btn">
+                                        Осталось <span></span> дня
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-card-4">
+                            <h3 class="main-card-4-title">Акции</h3>
+                            <button class="main-card-4-btn">
+                                <span class="main-card-4-btn-span">Подробнее</span>
+                                <img src="{% static 'portal/icons/header/arrow.svg' %}" alt="arrow">
+                            </button>
+                        </div>
+                        <div class="main-card-5">
+                            <div class="main-card-5-top">
+                                <span class="main-card-5-top-span">Текущий бизнес-пакет</span>
+                                <p class="main-card-5-top-text">{{ user.get_partner_type_display }}</p>
+                            </div>
+                            <div class="main-card-5-bottom">
+                                <p class="main-card-bottom-text">
+                                    Вы теряете баллы, <br> перейдите на STELLAR
+                                </p>
+                                <button class="main-card-5-bottom-btn">Перейти</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="new">
+	<div class="new-container">
+	<div class="new-content">
+
+
+
+
+
+        </div>
+	</div>    
+        </sectiction>
+       
+{% endblock %}
+

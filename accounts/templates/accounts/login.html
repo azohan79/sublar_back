@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>Личный кабинет - Вход</title>
+    <link rel="stylesheet" href="{% static 'accounts/css/main.css' %}">
+</head>
+<body>
+    <div class="auth">
+        <div class="auth__bg" style="background-image: url({% static 'accounts/img/bg.png' %})"></div>
+        <div class="auth__main">
+            <div class="auth__cont">
+                <div class="auth__cont-block">
+                    <div class="auth__logo">
+                        <img src="{% static 'accounts/img/logo_classic_dark.svg' %}" alt="">
+                    </div>
+                    <div class="auth__content">
+                        <form class="auth__form" method="POST">
+                            {% csrf_token %}
+                            <div class="auth__block">
+                                <div class="auth__block-text">
+                                    Авторизация
+                                </div>
+                                <div class="auth__list">
+                                    <div class="form-block w1">
+                                        <div class="form-block__head">
+                                            E-mail
+                                        </div>
+                                        <div class="form-block__body">
+                                            <input type="email" name="email" class="form-block__input" placeholder="admin@gmail.com" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-block w1">
+                                        <div class="form-block__head">
+                                            Пароль
+                                            <a href="#">Забыли?</a>
+                                        </div>
+                                        <div class="form-block__body">
+                                            <input type="password" name="password" class="form-block__input" placeholder="••••••••" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="auth__bottom">
+                                    <div class="btn-helper">
+                                        <a onclick="javascript:history.back();return false;" class="auth__btn">Назад</a>
+                                    </div>
+                                    <div class="btn-helper">
+                                        <button type="submit" class="auth__btn">Войти</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="auth__block-bottom">
+                            <div class="auth__block-text small">
+                                Нет аккаунта? <a href="{% url 'register' %}">Зарегистрируйтесь</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'accounts/js/jquery-3.7.0.min.js' %}"></script>
+    <script src="{% static 'accounts/js/main.js' %}"></script>
+</body>
+</html>
+

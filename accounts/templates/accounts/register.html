@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>Личный кабинет - Регистрация</title>
+  <link rel="stylesheet" href="{% static 'accounts/css/main.css' %}">
+</head>
+<body>
+  <div class="auth">
+    <div class="auth__bg" style="background-image: url({% static 'accounts/img/bg.png' %})"></div>
+    <div class="auth__main">
+      <div class="auth__cont">
+        <div class="auth__cont-block">
+          <div class="auth__logo">
+            <img src="{% static 'accounts/img/logo_classic_dark.svg' %}" alt="">
+          </div>
+          <div class="auth__content">
+            <form class="auth__form" method="POST" action="{% url 'register' %}">
+              {% csrf_token %}
+              {# Вывод скрытого поля partner_type #}
+              {{ form.partner_type }}
+              
+              <div class="auth__block">
+                <div class="auth__block-text">
+                  Регистрация
+                </div>
+                
+                {# Блок для вывода ошибок формы #}
+                {% if form.errors %}
+                  <ul class="errorlist">
+                    {% for field in form %}
+                      {% for error in field.errors %}
+                        <li>{{ field.label }}: {{ error }}</li>
+                      {% endfor %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                      <li>{{ error }}</li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+                
+                <div class="auth__list">
+                  <!-- Поле ФИО -->
+                  <div class="form-block">
+                    <label for="id_full_name">ФИО</label>
+                    <input class="form-block__input" type="text" id="id_full_name" name="full_name" placeholder="Введите ФИО" style="color: #CCC0B4;" required>
+                  </div>
+                  <!-- Поле Почты -->
+                  <div class="form-block">
+                    <label for="id_email">Электронная почта</label>
+                    <input class="form-block__input" type="email" id="id_email" name="email" placeholder="ivanov@example.com" style="color: #CCC0B4;" required>
+                  </div>
+                  <!-- Поле Телефона -->
+                  <div class="form-block">
+                    <label for="id_phone">Телефон</label>
+                    <input class="form-block__input" type="tel" id="id_phone" name="phone" placeholder="+7 (___) ___-__-__" style="color: #CCC0B4;" required>
+                  </div>
+                  <!-- Поле Реферальной ссылки -->
+                  <div class="form-block">
+                    <label for="id_referral_code">Реферальная ссылка</label>
+                    <input type="hidden" id="id_referral_code" name="referral_code" value="{{ form.initial.referral_code|default_if_none:'' }}" required>
+                    <p style="color: #CCC0B4;">{{ form.initial.referral_code|default_if_none:"" }}</p>
+                    <small>Регистрация невозможна без указания реферальной ссылки.</small>
+                  </div>
+                  <!-- Поле Пароля -->
+                  <div class="form-block">
+                    <label for="id_password1">Пароль</label>
+                    <div class="form-block__password">
+                      <input type="password" id="id_password1" name="password1" placeholder="••••••••" required>
+                    </div>
+                  </div>
+                  <!-- Поле Подтверждения пароля -->
+                  <div class="form-block">
+                    <label for="id_password2">Подтверждение пароля</label>
+                    <div class="form-block__password">
+                      <input type="password" id="id_password2" name="password2" placeholder="••••••••" required>
+                    </div>
+                  </div>
+                </div>
+                <!-- Блок спонсора -->
+                {% if sponsor %}
+                  <div class="form-block">
+                    <p>Ваш спонсор: {{ sponsor.full_name }} ({{ sponsor.email }})</p>
+                  </div>
+                {% endif %}
+                <div class="auth__bottom">
+                  <div class="btn-helper">
+                    <a onclick="javascript:history.back();return false;" class="auth__btn" style="color: #6E6655;">Назад</a>
+                  </div>
+                  <div class="btn-helper">
+                    <button type="submit" class="auth__btn" style="color: #6E6655;">Готово</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="auth__block-bottom">
+              <div class="auth__block-text small">
+                Уже есть аккаунт? <a href="{% url 'login' %}" style="color: #6E6655;">Войти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'accounts/js/jquery-3.7.0.min.js' %}"></script>
+  <script src="{% static 'accounts/js/main.js' %}"></script>
+</body>
+</html>

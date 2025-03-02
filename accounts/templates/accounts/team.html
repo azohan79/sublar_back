@@ -1,0 +1,417 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block title %}Моя команда{% endblock %}
+
+{% block content %}
+<section class="main">
+    <div class="main-container">
+        <div class="main-left">
+            <div class="main-left-content">
+                <ul class="main-left-list">
+                    <li class="main-left-item left-active">
+                        <div class="main-left-active"></div>
+                        <a href="{% url 'dashboard' %}" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-1.svg' %}" alt="left">
+                            <span class="main-left-span">Главная</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-2.svg' %}" alt="left">
+                            <span class="main-left-span">Моя карьера</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="{% url 'team' %}" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-3.svg' %}" alt="left">
+                            <span class="main-left-span">Моя команда</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-4.svg' %}" alt="left">
+                            <span class="main-left-span">Промо и розыгрыши</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-5.svg' %}" alt="left">
+                            <span class="main-left-span">Новости и публикации</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-6.svg' %}" alt="left">
+                            <span class="main-left-span">Рекламные материалы</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-7.svg' %}" alt="left">
+                            <span class="main-left-span">Мой профиль</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-8.svg' %}" alt="left">
+                            <span class="main-left-span">Мои заказы</span>
+                        </a>
+                    </li>
+                    <li class="main-left-item">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-9.svg' %}" alt="left">
+                            <span class="main-left-span">Мой кошелек</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-right">
+            <div class="main-card-main-2">
+                <div class="main-left-content-2">
+                    <div class="main-left-card">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-1.svg' %}" alt="left">
+                            <span class="main-left-span">Главная</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-2">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-2.svg' %}" alt="left">
+                            <span class="main-left-span">Моя карьера</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-3">
+                        <a href="{% url 'team' %}" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-3.svg' %}" alt="left">
+                            <span class="main-left-span">Моя команда</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-4">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-4.svg' %}" alt="left">
+                            <span class="main-left-span">Промо и розыгрыши</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-5">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-5.svg' %}" alt="left">
+                            <span class="main-left-span">Новости и публикации</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-6">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-6.svg' %}" alt="left">
+                            <span class="main-left-span">Рекламные материалы</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-7">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-7.svg' %}" alt="left">
+                            <span class="main-left-span">Мой профиль</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-8">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-8.svg' %}" alt="left">
+                            <span class="main-left-span">Мои заказы</span>
+                        </a>
+                    </div>
+                    <div class="main-left-card-9">
+                        <a href="#!" class="main-left-link">
+                            <img src="{% static 'portal/icons/main/left-9.svg' %}" alt="left">
+                            <span class="main-left-span">Мой кошелек</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team-right">
+                    <div class="team-main-right">
+                      <!-- Блок спонсора -->
+                      <div class="team-right-col">
+                        <div class="team-wrap">
+                          <h3 class="team-wrap-title">Мой спонсор</h3>
+                          {% if sponsor %}
+                            <div class="team-wrap-col">
+                              <div class="team-main-wrap-col">
+                                <div class="team-wrap-col-cont">
+                                  <p class="team-wrap-text">ФИО</p>
+                                  <div class="team-wrap-cont">
+                                    <p class="team-wrap-col-text">{{ sponsor.full_name }}</p>
+                                  </div>
+                                </div>
+                                <div class="team-wrap-col-cont">
+                                  <p class="team-wrap-text">ID</p>
+                                  <div class="team-wrap-cont-2">
+                                    <p class="team-wrap-col-text">{{ sponsor.id }}</p>
+                                  </div>
+                                </div>
+                                <div class="team-wrap-col-cont">
+                                  <p class="team-wrap-text">Почта</p>
+                                  <div class="team-wrap-cont-3">
+                                    <p class="team-wrap-col-text">{{ sponsor.email }}</p>
+                                  </div>
+                                </div>
+                                <button class="team-wrap-btn">
+                                  <span>Написать спонсору</span>
+                                  <img src="{% static 'portal/icons/header/arrow.svg' %}" alt="arrow">
+                                </button>
+                              </div>
+                            </div>
+                          {% else %}
+                            <p>Спонсор не задан.</p>
+                          {% endif %}
+                        </div>
+          
+                        <!-- Контент с вкладками -->
+                        <div class="team-main-content">
+                          <div class="team-button-col">
+                            <button class="team-btn-1 active" onclick="openTab(event, 'partners')">Партнеры</button>
+                            <button class="team-btn-2" onclick="openTab(event, 'tree')">Дерево партнеров</button>
+                          </div>
+          
+                          <!-- Блок для управления отображением списка партнеров -->
+                          <div class="partner-right-main-wrap-2">
+                            <div class="partner-content">
+                              <div class="partner-main-wrap">
+                                <div class="partner-main-wrap-col">
+                                  <p class="partner-main-wrap-col-text">
+                                    В данном разделе отображены все члены Вашей команды
+                                  </p>
+                                  <button class="partner-main-wrap-col-btn">
+                                    <span class="partner-main-wrap-col-btn-text">
+                                      Поиск по ID, ФИО или номеру телефона
+                                    </span>
+                                    <img src="{% static 'portal/icons/main/partner-search.svg' %}" alt="search">
+                                  </button>
+                                </div>
+                                <div class="partner-main-wrap-col-2">
+                                  <button class="partner-main-wrap-col-2-btn">
+                                    <span>
+                                      Порядок отображения списка
+                                    </span>
+                                    <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M7.51562 0.861328L4.01562 5.51713L0.515625 0.861328H7.51562Z" fill="#5E5E7B"/>
+                                    </svg>
+                                  </button>
+                                  <div class="partner-main-wrap-col-2-content">
+                                    <div class="partner-main-wrap-col-card">
+                                      <p class="partner-main-wrap-card-text">
+                                        Фамилия Имя Отчество
+                                      </p>
+                                      <img src="{% static 'portal/icons/main/partner-card-top.svg' %}" alt="partner">
+                                    </div>
+                                    <div class="partner-main-wrap-col-card-1">
+                                      <p class="partner-main-wrap-card-text">
+                                        ID
+                                      </p>
+                                      <img src="{% static 'portal/icons/main/partner-card-top.svg' %}" alt="partner">
+                                    </div>
+                                    <div class="partner-main-wrap-col-card-2">
+                                      <p class="partner-main-wrap-card-text">
+                                        E-mail
+                                      </p>
+                                      <img src="{% static 'portal/icons/main/partner-card-top.svg' %}" alt="partner">
+                                    </div>
+                                    <div class="partner-main-wrap-col-card-3">
+                                      <p class="partner-main-wrap-card-text">
+                                        Последняя <br>
+                                        покупка
+                                      </p>
+                                      <img src="{% static 'portal/icons/main/partner-card-top.svg' %}" alt="partner">
+                                    </div>
+                                    <div class="partner-main-wrap-col-card-4">
+                                      <p class="partner-main-wrap-card-text">
+                                        Кол-во <br>
+                                        партнеров <br>
+                                        нижестоящих <br>
+                                      </p>
+                                      <img src="{% static 'portal/icons/main/partner-card-top.svg' %}" alt="partner">
+                                    </div>
+                                    <div class="partner-main-wrap-col-card-5">
+                                      <p class="partner-main-wrap-card-text">
+                                        Групповой <br>
+                                        объем (ГО)
+                                      </p>
+                                      <img src="{% static 'portal/icons/main/partner-card-top.svg' %}" alt="partner">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+          
+                              <!-- Вкладка "Партнеры": список прямых партнеров -->
+                              <div id="partners" class="tab-content" style="display: block;">
+                                
+                                {% if direct_placements %}
+                                  <div class="partner-cards">
+                                    {% for placement in direct_placements %}
+                                    <div class="partner-card-1">
+                                      <div class="partner-card-1-top-col">
+                                        <div class="partner-card-1-col-1">
+                                          <p class="partner-card-1-text">
+                                            {{ placement.child.full_name }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-card-1-col-2">
+                                          <p class="partner-card-1-text">
+                                            {{ placement.child.id }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-card-1-col-3">
+                                          <p class="partner-card-1-text">
+                                            {{ placement.child.email }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-card-1-col-4">
+                                          <p class="partner-card-1-text">
+                                            {{ placement.last_purchase_date|default:"—" }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-card-1-col-5">
+                                          <p class="partner-card-1-text">
+                                            {{ placement.child.partners_count|default:"—" }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-card-1-col-6">
+                                          <p class="partner-card-1-text">
+                                            {{ placement.child.group_volume|default:"—" }}
+                                          </p>
+                                        </div>
+                                      </div>
+                                      <div class="partner-card-1-wrap">
+                                        <div class="partner-card-1-wrap-col">
+                                          <p class="partner-wrap-card-text">
+                                            {{ placement.child.partner_type|default:"—" }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-wrap-card-col-main">
+                                          <p class="partner-wrap-card-col-main-text">
+                                            {{ placement.get_side_display }}
+                                          </p>
+                                          <div class="partner-card-span-wrap-col">
+                                            <span class="pertner-card-wrap-span">
+                                                {{ placement.level }}
+
+                                            </span>
+                                            <span class="partner-card-wrap-span-1">
+                                              линия
+                                            </span>
+                                          </div>
+                                          <p class="partner-wrap-card-col-main-text">
+                                            {% if placement.child.marketing_activity %}
+                                              {{ placement.child.marketing_activity }}
+                                            {% else %}
+                                              Не активен
+                                            {% endif %}
+                                        </p>
+                                        </div>
+                                      </div>
+                                      <div class="partner-card-bottom-col">
+                                        <div class="partner-card-bottom-col-top">
+                                          <p class="partner-card-bottom-main-text">
+                                            ID и ФИО спонсора
+                                          </p>
+                                          <p class="partner-card-bottom-main-text">
+                                            {{ sponsor.id }}
+                                          </p>
+                                          <p class="partner-card-bottom-main-text">
+                                            {{ sponsor.full_name }}
+                                          </p>
+                                        </div>
+                                        <div class="partner-bottom-card-main-col">
+                                          <div class="partner-card-text-wrap-bottom">
+                                            <p class="partner-card-bottom-col-text">
+                                              Телефон
+                                            </p>
+                                            <p class="partner-card-bottom-col-text">
+                                              {{ sponsor.phone }}
+                                            </p>
+                                          </div>
+                                          <button class="partner-card-bottom-btn">
+                                            <span class="partner-card-bottom-btn-span">
+                                              В мессенджер
+                                            </span>
+                                            <svg width="13" height="9" viewBox="0 0 13 9" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                              <path d="M11.8692 4.92582C12.0644 4.73056 12.0644 4.41397 11.8692 4.21871L8.6872 1.03673C8.49194 0.84147 8.17535 0.84147 7.98009 1.03673C7.78483 1.23199 7.78483 1.54858 7.98009 1.74384L10.8085 4.57227L7.98009 7.40069C7.78483 7.59595 7.78483 7.91254 7.98009 8.1078C8.17535 8.30306 8.49194 8.30306 8.6872 8.1078L11.8692 4.92582ZM0.515625 5.07227H11.5156V4.07227H0.515625V5.07227Z" fill="#6E6655"/>
+                                            </svg>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    {% endfor %}
+                                  </div>
+                                  <button class="partner-btn">
+                                    <span class="partner-main-btn-span">Загрузить еще</span>
+                                  </button>
+                                {% else %}
+                                  <p>Нет прямых партнеров.</p>
+                                {% endif %}
+                              </div>
+          
+                              <!-- Вкладка "Дерево партнеров": вывод дерева через частичный шаблон -->
+                              <div id="tree" class="tab-content" style="display: none;">
+                                <h2></h2>
+                                {% include "accounts/partials/team_tree.html" with tree=tree %}
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <script>
+            // При загрузке страницы установить вкладку "partners" как активную
+            document.addEventListener('DOMContentLoaded', function() {
+              // Устанавливаем отображение вкладок
+              var partnersTab = document.getElementById('partners');
+              var treeTab = document.getElementById('tree');
+              if (partnersTab) {
+                partnersTab.style.display = "block";
+              }
+              if (treeTab) {
+                treeTab.style.display = "none";
+              }
+              
+              // Добавляем класс "active" к кнопке вкладки "Партнеры"
+              var teamBtns1 = document.getElementsByClassName('team-btn-1');
+              if (teamBtns1.length > 0) {
+                teamBtns1[0].classList.add("active");
+              }
+              // Удаляем класс "active" с кнопки "Дерево партнеров", если он установлен
+              var teamBtns2 = document.getElementsByClassName('team-btn-2');
+              if (teamBtns2.length > 0) {
+                teamBtns2[0].classList.remove("active");
+              }
+            });
+            
+            // Функция переключения вкладок
+            function openTab(evt, tabName) {
+              var i, tabcontent, tabbuttons;
+              tabcontent = document.getElementsByClassName("tab-content");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              
+              // Сбросить класс "active" у всех кнопок обеих групп
+              tabbuttons = document.getElementsByClassName("team-btn-1");
+              for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+              }
+              tabbuttons = document.getElementsByClassName("team-btn-2");
+              for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+              }
+              
+              // Показать выбранную вкладку и установить активность для нажатой кнопки
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.classList.add("active");
+            }
+            </script>
+          {% endblock %}
