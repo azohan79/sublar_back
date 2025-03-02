@@ -1,0 +1,104 @@
+.partner-set {
+    width: 100%;
+}
+.partner-set__head {
+    background: #21262F;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 17px 13px 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.partner-set__head-col {
+
+}
+.partner-set__head-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--light-light-grey);
+    margin-bottom: 1px;
+}
+.partner-set__head-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #BCFD01;
+}
+.partner-set__head-price {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--white);
+    margin-bottom: 42px;
+}
+.partner-set__head-btn {
+    padding: 4px 10px;
+    color: #FFE388;
+    border-color: #FFE388;
+    background: transparent;
+}
+.partner-set__bottom {
+    border-radius: 0 0 10px 10px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.partner-set__bottom-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.partner-set__list-item {
+    display: inline-block;
+    background: rgba(33, 38, 47, 0.7);
+    border-radius: 5px 0 0 5px;
+    padding: 3px 17px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+.partner-set__list-item:last-child {
+    margin-bottom: 0;
+}
+@media (max-width: 1399px) {
+    .site-permission {
+        padding-top: 75px;
+    }
+}
+@media (max-width: 767px) {
+    .site-permission {
+        padding-top: 40px;
+    }
+    .site-permission__cont {
+        width: 100%;
+    }
+    .banner-business__title {
+        font-size: 22px;
+    }
+    .banner-business {
+        padding: 20px;
+    }
+    .partner-set__head-title {
+        font-size: 26px;
+    }
+    .partner-set__head-price {
+        font-size: 21px;
+    }
+}
+@media (min-width: 1400px) {
+    .partner-set__head-btn:hover {
+        background: #FFE388;
+        color: var(--grey1);
+    }
+}

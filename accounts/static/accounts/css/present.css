@@ -1,0 +1,72 @@
+.present {
+    width: 100%;
+    background: #000206;
+    border-radius: 15px;
+    padding: 11px 20px 12px;
+    display: block;
+}
+.present__bg {
+    width: 244px;
+    max-width: calc(100% - 155px - 10px);
+    margin-bottom: -12px;
+    display: flex;
+    align-items: flex-end;
+}
+.present__bg img {
+    width: 100%;
+}
+.present__head {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--white);
+    margin-bottom: 8px;
+}
+.present__body {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.present__info {
+    width: 155px;
+}
+.present__info-row {
+    margin-bottom: 13px;
+}
+.present__info-row:last-child {
+    margin-bottom: 0;
+}
+.present__info-title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--grey2);
+    margin-bottom: 4px;
+}
+.present__info-value {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+}
+@media (max-width: 450px) {
+    .present__info {
+        width: 130px;
+    }
+    .present__bg {
+        width: 100%;
+        max-width: calc(100% - 135px + 20px);
+        margin-bottom: -12px;
+        margin-right: -20px;
+    }
+    .present__info-value {
+        font-size: 14px;
+    }
+}

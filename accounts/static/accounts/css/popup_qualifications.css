@@ -1,0 +1,94 @@
+.popup-qualifications {
+    width: 720px;
+    padding: 38px 20px 82px;
+    background: var(--c01);
+    border-radius: 15px;
+}
+.popup-qualifications-change {
+    width: 720px;
+    padding: 38px 20px 82px;
+    background: var(--c01);
+    border-radius: 15px;
+}
+.popup-qualifications__head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.popup-qualifications__body {
+    width: 430px;
+    margin: 0 auto;
+}
+.popup-qualifications-change__block {
+    margin-bottom: 25px;
+}
+.popup-qualifications-change__block:last-child {
+    margin-bottom: 0;
+}
+.popup-qualifications-change__body {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.popup-qualifications-change__body ul {
+    padding-left: 15px;
+}
+.popup-qualifications-change__body li {
+    font-family: 'Inter';
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.popup-qualifications-change__body li:last-child {
+    margin-bottom: 0;
+}
+.popup-qualifications-change__col {
+    width: calc(50% - 20px);
+}
+.popup-qualifications-change__status {
+    margin-bottom: 20px;
+}
+.popup-qualifications .qual-list {
+    width: 100%;
+
+}
+.popup-qualifications .qual-list__item {
+    width: 100%;
+}
+@media (max-width: 767px) {
+    .popup-qualifications {
+        width: 100%;
+    }
+    .popup-qualifications__body {
+        width: 350px;
+    }
+    .popup-qualifications-change__body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 500px) {
+    .popup-qualifications {
+        width: 100%;
+    }
+    .popup-qualifications__body {
+        width: 100%;
+    }
+    .popup-qualifications-change__body {
+        flex-wrap: wrap;
+    }
+    .popup-qualifications-change__col {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .popup-qualifications-change__col:last-child {
+        margin-bottom: 0;
+    }
+}

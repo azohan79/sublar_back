@@ -1,0 +1,98 @@
+.notifications-list {
+    width: 100%;
+}
+.notifications-list__helper {
+    margin-bottom: 12px;
+}
+.notifications-list__helper:last-child {
+    margin-bottom: 0;
+}
+.notifications-list__item {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--red);
+    border-radius: 15px;
+    padding: 15px 15px 10px 22px;
+}
+.notifications-list__item > *:last-child {
+    padding-bottom: 0;
+}
+.notifications-list__item > *:first-child {
+    padding-top: 0;
+}
+.notifications-list__item-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.notifications-list__item-head-col {
+
+}
+.notifications-list__item-btns {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notifications-list__item-btns-item {
+    width: calc(50% - 8px);
+    background: var(--white);
+    padding: 8px;
+}
+.notifications-list__item-btns-item.warn {
+    border-color: var(--red);
+    color: var(--red);
+}
+.notifications-list__item-btns-item.success {
+    border-color: var(--green);
+    color: var(--green);
+}
+.notifications-list__item-info {
+    padding-top: 13px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notifications-list__item-info-col {
+
+}
+.notifications-list__item-text {
+    padding: 5px 0;
+    color: var(--grey1);
+}
+.notifications-list__item-status {
+    padding: 8px 0;
+}
+.notifications-filter {
+    width: 180px;
+    border-color: var(--grey1);
+}
+.notifications-filter .wallet__report-radio-text {
+    color: var(--grey1);
+}
+@media (min-width: 1400px) {
+
+    .notifications-list__item-btns-item.warn:hover {
+        background: var(--red);
+        color: var(--white);
+    }
+    .notifications-list__item-btns-item.success:hover {
+        background: var(--green);
+        color: var(--white);
+    }
+}
+@media (max-width: 1399px) {
+    .notifications-filter {
+        margin-top: 10px;
+    }
+
+}
+@media (max-width: 450px) {
+    .notifications-list__item-info-col {
+        font-size: 12px;
+    }
+
+}
