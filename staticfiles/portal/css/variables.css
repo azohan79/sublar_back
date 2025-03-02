@@ -1,0 +1,30 @@
+/*  Root  */
+
+:root {
+    --main-light: #ebe5d5;
+    --main-medium: #a68f7d;
+    --main-dark: #6e6655;
+    --light-add: #f1eee6;
+    --05: #9a7b5d;
+    --white: #fff;
+
+    --font-family: "SF Pro Display", sans-serif;
+    --second-family: "Helvetica", sans-serif;
+    --third-family: "Montserrat", sans-serif;
+    --font3: "Plumb", sans-serif;
+    --font4: "Roboto", sans-serif;
+    --font5: "Inter", sans-serif;
+    --font6: "Lavka 2021", sans-serif;
+    --font7: "Helvetica Neue", sans-serif;
+    --font8: "AppetitePro", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+html,
+body {
+    height: 100%;
+}
