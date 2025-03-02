@@ -1,0 +1,193 @@
+.career-main-bonus {
+    width: 100%;
+    background: #21262F;
+    border-radius: 15px;
+    padding: 16px 28px 23px;
+}
+.career-main-bonus__head {
+    margin-bottom: 12px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+}
+.career-main-bonus__body {
+    width: 100%;
+    padding-top: 10px;
+}
+.career-main-bonus__body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.career-main-bonus__body::-webkit-scrollbar-track {
+    background: transparent;
+}
+.career-main-bonus__body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 0 solid transparent;
+}
+.career-main-bonus__list {
+    width: calc(102px * 9);
+    margin: 0 -6px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.career-main-bonus__list-helper {
+    width: calc(90px + 12px);
+    padding: 0 6px;
+    position: relative;
+    z-index: 0;
+}
+.career-main-bonus__list-helper:after {
+    content: '';
+    top: 10px;
+    left: 50%;
+    width: 70px;
+    height: 1px;
+    background: var(--grey1);
+    position: absolute;
+    z-index: -1;
+}
+.career-main-bonus__list-helper:before {
+    content: '';
+    top: 10px;
+    right: 50%;
+    width: 70px;
+    height: 1px;
+    background: var(--grey1);
+    position: absolute;
+    z-index: -1;
+}
+.career-main-bonus__list-helper:first-child:before {
+    display: none;
+}
+.career-main-bonus__list-helper:last-child:after {
+    display: none;
+}
+.career-main-bonus__list-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.career-main-bonus__list-item-img {
+
+    position: relative;
+}
+.career-main-bonus__list-item-img-item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.career-main-bonus__list-item-img:after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    border: 5px solid #FFE388;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 2;
+}
+.career-main-bonus__list-item.active  .career-main-bonus__list-item-img:after {
+    opacity: 1;
+}
+.career-main-bonus__list-item-img-item img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.career-main-bonus__list-item-title {
+    margin-top: 13px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--grey2);
+    white-space: nowrap;
+}
+.career-main-bonus__list-item.active .career-main-bonus__list-item-title {
+    color: var(--white);
+}
+.career-main-bonus__list-item.ended .career-main-bonus__list-item-subtext {
+    color: var(--white);
+}
+.career-main-bonus__list-item-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFE388;
+    margin-top: 12px;
+}
+.career-main-bonus__list-item-subtext {
+    margin-top: 4px;
+    ont-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: var(--grey2);
+}
+
+.bonus-list {
+    width: 100%;
+}
+.bonus-list__item {
+    margin-bottom: 10px;
+    padding: 15px 27px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.bonus-list__item:last-child {
+    margin-bottom: 0;
+}
+.bonus-list__item-img {
+    width: 50px;
+}
+.bonus-list__item-img img {
+    width: 100%;
+}
+.bonus-list__item-text {
+    width: calc(100% - 50px - 20px);
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #21262F;
+    margin-left: 20px;
+}
+@media (max-width: 1399px) {
+    .career-main-bonus__body {
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 450px) {
+    .bonus-list__item-img {
+        width: 35px;
+    }
+    .bonus-list__item-text {
+        width: calc(100% - 35px - 20px);
+        font-size: 12px;
+        line-height: 15px;
+    }
+}
+

@@ -1,0 +1,224 @@
+.auth {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+}
+.auth * {
+    font-family: 'HelveticaNeueCyr';
+}
+.auth__bg {
+    width: 59%;
+    background-position: center right;
+    background-size: cover;
+}
+.auth__main {
+    width: 41%;
+    padding-left: 17px;
+    padding-top: 105px;
+    padding-bottom: 100px;
+}
+.auth__cont {
+    width: 457px;
+}
+.auth__cont-block {
+
+}
+.auth__logo {
+    width: 158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.auth__logo img {
+    width: 100%;
+}
+.auth__title {
+    margin-top: 70px;
+    margin-bottom: 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    color: var(--grey1);
+    text-align: center;
+}
+.auth__block-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--grey1);
+    text-align: center;
+    padding: 10px;
+}
+.auth__block-text a {
+    color: #FF015C;
+}
+.auth__block-bottom {
+    padding-top: 13px;
+    margin-bottom: -13px;
+}
+.auth__block-text:first-child {
+    padding-top: 0;
+}
+.auth__block-text:last-child {
+    padding-bottom: 0;
+}
+.auth__block-text.small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.auth__list {
+    width: calc(100% + 14px);
+    margin: 0 -7px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.auth__list .catalog__filter-block-head {
+    background: var(--white);
+    border-color: var(--grey1);
+    padding: 13px calc(24px + 8px + 15px) 10px 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.auth__list .catalog__filter-block-head-value {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.auth__list .catalog__filter-block-body-list {
+    min-height: 0;
+}
+.auth__list .form-block {
+    padding: 12px 7px;
+}
+.auth__content {
+    width: 100%;
+}
+.auth__form {
+    width: 100%;
+}
+.auth__block {
+    width: 100%;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 25px 25px 40px;
+
+}
+.auth__block > *:first-child {
+    padding-top: 0;
+}
+.auth__block > *:last-child {
+    padding-bottom: 0;
+}
+.auth__bottom {
+    width: calc(100% + 10px);
+    margin: -5px;
+    display: flex;
+    align-items: initial;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.btn-helper {
+    width: 50%;
+    padding: 5px;
+}
+.btn-helper.big {
+    width: 100%;
+}
+.auth__btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: var(--white);
+    color: var(--red);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.auth__list .form-block__input {
+    border-color: var(--grey1);
+}
+.auth__list .form-block:not(.w2):first-child {
+    padding-top: 0;
+}
+.auth__list .form-block:not(.w2):last-child {
+    padding-bottom: 0;
+}
+.popup-orders.auth-popup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-popup__cont {
+    width: 41%;
+    padding-left: 17px;
+}
+@media (min-width: 1399px) {
+    .auth__btn:hover {
+        background: var(--c01);
+    }
+}
+@media (max-width: 1399px) {
+    .auth__bg {
+        max-width: calc(100% - 430px);
+        width: 50%;
+        background-position: center right;
+        background-size: cover;
+    }
+    .auth-popup__cont {
+        width: 50%;
+        min-width: calc(400px + 15px);
+        padding-left: 15px;
+    }
+    .auth__main {
+        width: 50%;
+        min-width: calc(400px + 30px);
+        padding: 100px 15px;
+    }
+    .auth__cont {
+        width: 400px;
+    }
+}
+@media (max-width: 1100px) {
+
+    .auth-popup {
+        padding: 15px 9px !important;
+    }
+}
+@media (max-width: 767px) {
+    .auth__bg {
+        display: none;
+    }
+    .auth__main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        min-width: 0;
+    }
+    .auth-popup__cont {
+        width: 100%;
+        max-width: 400px;
+        min-width: 0;
+        padding-left: 0;
+    }
+    .popup-orders.auth-popup {
+        justify-content: center;
+    }
+    .auth__cont {
+        width: 100%;
+        max-width: 400px;
+    }
+}

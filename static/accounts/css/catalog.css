@@ -1,0 +1,106 @@
+.catalog {
+    /*padding-bottom: 70px;*/
+    padding-top: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catalog__block {
+    width: 100%;
+    padding-bottom: 70px;
+}
+.catalog__block:first-child {
+    padding-top: 0;
+}
+.catalog__block:last-child {
+    padding-bottom: 0;
+}
+.catalog__block-head {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catalog__block-head-title {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey1);
+}
+.catalog__block-body {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.catalog__list {
+    width: calc((248px + 80px) * 3);
+    margin: -30px -40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: initial;
+}
+.catalog__block-bottom {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catalog__block-btn {
+    font-family: var(--font-primary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.0373px;
+    line-height: 175%;
+    color: var(--main-red);
+    padding: 5px 25px;
+    background: var(--white);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+@media (min-width: 1399px) {
+    .catalog__block-btn:hover {
+        background: var(--main-red);
+        color: var(--white);
+    }
+}
+@media (max-width: 1399px) {
+    .catalog__list {
+        width: calc((248px + 80px) * 2);
+    }
+    .catalog__block-head {
+        margin-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+
+        font-size: 28px;
+        line-height: 102.02%;
+    }
+    .catalog__block {
+        padding: 30px 0;
+    }
+    .catalog__block-bottom {
+        margin-top: 40px;
+    }
+    .catalog {
+        padding-top: 53px;
+    }
+}
+@media (max-width: 767px) {
+    .catalog__block-body {
+        justify-content: center;
+    }
+    .catalog__list {
+        width: 248px;
+
+    }
+    .catalog__block-bottom {
+        margin-top: 60px;
+    }
+}

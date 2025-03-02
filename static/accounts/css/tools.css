@@ -1,0 +1,6 @@
+.tool-block {
+    display: none;
+}
+.tool-block.active {
+    display: block;
+}

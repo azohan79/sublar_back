@@ -1,0 +1,13 @@
+.popup-product__main {
+    width: 720px;
+    background: var(--white);
+    padding: 13px 35px 40px;
+    border-radius: 15px;
+}
+@media (max-width: 767px) {
+    .popup-product__main {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

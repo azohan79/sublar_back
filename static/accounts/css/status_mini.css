@@ -1,0 +1,61 @@
+.status-mini1 {
+    background: #5E6572;
+}
+.status-mini2 {
+    background: #5C93E8;
+}
+.status-mini3 {
+    background: #4960E6;
+}
+.status-mini4 {
+    background: #3E37C1;
+}
+.status-mini5 {
+    background: #9747FF;
+}
+.status-mini6 {
+    background: #6000EB;
+}
+.status-mini7 {
+    background: #3C0071;
+}
+.status-mini8 {
+    background: #690026;
+}
+.status-mini9 {
+    background: #B10040;
+}
+.status-mini10 {
+    background: #FF015C;
+}
+.status-mini {
+    width: 203px;
+    height: 40px;
+    padding-left: 15px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.status-mini__text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.254px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.status-mini__img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+}
+.status-mini__img img {
+    height: 100%;
+}

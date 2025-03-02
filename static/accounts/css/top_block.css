@@ -1,0 +1,194 @@
+.top-block {
+    padding: 20px 80px;
+    background: linear-gradient(180deg, #5E6572 0%, #39414F 100%);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.top-block__head {
+    margin-bottom: 40px;
+    width: 100%;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--white);
+}
+.top-block__body {
+    width: 100%;
+}
+.top-block__list {
+    width: 100%;
+    /*counter-reset: section;*/
+}
+.top-block__list-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(33, 38, 47, 0.95);
+    border-radius: 40px;
+    padding: 17px 75px 17px 25px;
+}
+.top-block.main .top-block__list-item {
+    background: rgba(33, 38, 47, 0.8);
+}
+.top-block__list-item:last-child {
+    margin-bottom: 0;
+}
+.top-block__list-item-col {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    counter-reset: section;
+
+}
+.top-block__list-item-num {
+    margin-right: 40px;
+    width: 40px;
+    height: 40px;
+    border: 0.507937px solid var(--c01);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--light-grey2);
+    counter-increment: section;
+    content: counter(section);
+}
+.top-block.main .top-block__list-item-num {
+    border-color: #BCFD01;
+    background: #BCFD01;
+    color: #21262F;
+}
+
+.top-block.main .top-block__list-item-num > div {
+    color: #21262F;
+}
+.top-block__list-item-num > div {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 6px;
+    line-height: 7px;
+    text-align: center;
+    color: var(--light-grey2);
+    margin-top: -5px;
+}
+.top-block__list-item-profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 15px;
+}
+.top-block__list-item-profile-img {
+    margin-right: 10px;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--light-light-grey);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.top-block.main .top-block__list-item-profile-img {
+    border-color: #BCFD01;
+}
+.top-block__list-item-profile-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    min-width: 180px;
+}
+.top-block__list-item-id {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+}
+.top-block__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.top-block__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey1);
+    border-radius: 20px;
+    background: var(--c01);
+    border-color: var(--c01);
+    padding: 12px 17px;
+}
+@media (max-width: 1399px) {
+    .top-block__list-item {
+        padding: 17px 25px;
+    }
+    .top-block {
+        padding: 20px 20px;
+    }
+    .top-block__list-item-num {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .top-block__list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 15px;
+    }
+    .top-block__list-item-num {
+        margin-right: 10px;
+    }
+    .top-block__list-item-col:last-child {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .top-block__list-item-profile-text {
+        width: calc(100% - 54px);
+        min-width: 0;
+    }
+    .top-block__list-item-col {
+        flex-wrap: wrap;
+    }
+    .top-block__list-item-id {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .top-block__list-item-profile {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .top-block__list-item-id {
+        padding-left: 54px;
+    }
+    .top-block__list-item-num {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (min-width: 1400px) {
+    .top-block__link:hover {
+        color: var(--red);
+        background: var(--c01);
+    }
+}

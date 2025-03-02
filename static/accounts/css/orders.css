@@ -1,0 +1,118 @@
+.orders-list {
+    margin: -5px 0;
+}
+.site-block.orders {
+    background: var(--c01);
+}
+.orders-list__helper {
+    padding: 5px 0;
+}
+.orders-list__item {
+    width: 100%;
+    background: var(--white);
+    padding: 16px 20px 15px;
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+.orders-list__item-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.orders-list__item-col:last-child {
+    align-items: flex-end;
+}
+.orders-list__item-number {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--grey1);
+    margin-bottom: 22px;
+}
+.orders-ended .orders-list__item-number, .orders-ended .orders-list__item-bottom, .orders-ended .orders-list__item-right-bottom {
+    opacity: 0.5;
+}
+.orders-list__item-bottom {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.orders-list__item-gallery {
+    margin-right: 17px;
+    display: flex;
+    align-items: initial;
+    justify-content: flex-start;
+}
+.orders-list__item-gallery-item {
+    width: 41px;
+    height: 37px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7px;
+    background: var(--light-grey2);
+}
+.orders-list__item-gallery-item:last-child {
+    margin-right: 0;
+    width: 18px;
+}
+.orders-list__item-gallery-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.orders-list__item-bottom-text {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: var(--light-grey);
+}
+.orders-list__item-right-top {
+
+}
+.orders-list__item-status {
+    font-family: 'Plumb';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 102.02%;
+    text-align: right;
+    margin-bottom: 4px;
+    color: #21262F;
+}
+.orders-list__item-status:last-child {
+    margin-bottom: 0;
+}
+.orders-list__item-right-bottom {
+
+}
+@media (max-width: 900px) {
+    .orders-list__item {
+        flex-wrap: wrap;
+    }
+    .orders-list__item-col:last-child {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .orders-list__item-right-top {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .orders-list__item-status {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+    .orders-list__item-number {
+        margin-bottom: 15px;
+    }
+}

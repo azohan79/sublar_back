@@ -1,0 +1,92 @@
+.business-package {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 13px 20px;
+    padding-top: 12px;
+    min-height: 120px;
+}
+.business-package2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.business-package2 .business-package__head {
+    flex-direction: column;
+    align-items: flex-end;
+}
+.business-package2 .business-package__head-title {
+    margin-right: 0;
+    margin-bottom: 12px;
+}
+.business-package2 .business-package__body-text {
+    padding-right: 5px;
+}
+.business-package2 .business-package__body {
+    max-width: 240px;
+    padding-right: 8px;
+    margin-right: 0;
+}
+.business-package__head {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.business-package__head-title {
+    margin-right: 7px;
+}
+.business-package__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 295px;
+    padding: 12px 17px 12px 20px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FF015C;
+    border-radius: 10px;
+}
+.business-package__body-text {
+
+}
+.business-package__btn {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #03F8FE;
+    border-color: #03F8FE;
+    border-radius: 20px;
+    background: transparent;
+    padding: 7px 14px;
+}
+@media (min-width: 1400px) {
+    .business-package__btn:hover {
+        background: #03F8FE;
+        color: var(--grey1);
+    }
+}
+@media (max-width: 1399px) {
+    .business-package2 {
+        display: block;
+    }
+    .business-package2 .business-package__head {
+        flex-direction: row;
+        align-items: center;
+    }
+    .business-package2 .business-package__head-title {
+        margin-right: 7px;
+        margin-bottom: 0;
+    }
+    .business-package2 .business-package__body-text {
+        padding-right: 2px;
+    }
+    .business-package2 .business-package__body {
+        max-width: 250px;
+        padding-right: 0;
+        margin-right: auto;
+    }
+}

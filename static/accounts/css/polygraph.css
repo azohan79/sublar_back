@@ -1,0 +1,48 @@
+.polygraph-list__head {
+    width: 100%;
+    background: var(--light-grey2);
+    padding: 8px 17px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.polygraph-list__head-text {
+    width: calc(100% - 140px);
+}
+.polygraph-list__head-btn {
+    padding: 11px 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background: var(--red);
+    color: var(--white);
+}
+.polygraph-main {
+    width: 100%;
+    background: var(--light-grey2);
+    padding: 14px 17px;
+    border-radius: 15px;
+}
+.polygraph-main .site-block__head-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.polygraph-main .site-block__head-text {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+.polygraph-main .site-block__row {
+    padding-left: 6px;
+}
+.polygraph-main .materials-list__item {
+    background: var(--white);
+}
+@media (min-width: 1400px) {
+    .polygraph-list__head-btn:hover {
+        background: #9A0138;
+    }
+}

@@ -1,0 +1,123 @@
+.support-form .form-block__head {
+    color: var(--light-light-grey);
+}
+.support-bottom__link {
+
+    font-weight: 400;
+}
+.support-social {
+    width: 100%;
+    padding-top: 40px;
+}
+.support-social__list {
+    width: calc(100% + 20px);
+    margin: -10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.support-social__list-helper {
+    padding: 10px;
+    display: inline-block;
+}
+.support-social__list-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.support-social__list-img {
+    width: 27px;
+    display: inline-block;
+    cursor: pointer;
+}
+.support-social__list-img img {
+    width: 100%;
+}
+.support-social__list-text {
+    text-align: center;
+    margin-top: 5px;
+    display: inline-block;
+    color: #21262F;
+    transition: .3s;
+    width: 80px;
+}
+.support-faq {
+    width: calc(100% + 50px);
+    margin: -25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.support-faq__col {
+    width: 50%;
+    padding: 25px;
+}
+.support-faq__tools-list {
+    width: 100%;
+}
+.support-faq__tools-item {
+    margin-bottom: 10px;
+    padding: 20px 25px;
+    background: var(--c01);
+    border-radius: 20px;
+    transition: .3s;
+}
+.support-faq__tools-item:last-child {
+    margin-bottom: 0;
+}
+.support-faq__tools-item-bottom {
+    display: none;
+    padding-top: 40px;
+}
+.support-faq__tools-item-bottom .text-helper > * {
+    color: var(--white);
+}
+.support-faq__tools-item-head-img {
+    display: none;
+}
+.support-faq__tools-item.active {
+    background: var(--light-grey);
+}
+.support-faq__tools-item.active .support-faq__tools-item-head-title {
+    color: var(--white);
+}
+.support-faq__main {
+    width: 100%;
+}
+.support-faq__tool-block {
+
+}
+@media (min-width: 1400px) {
+    .support-social__list-text:hover {
+        color: var(--red);
+    }
+    .support-faq__tools-item:not(.active):hover {
+        background: var(--light-grey2);
+        cursor: pointer;
+    }
+}
+@media (max-width: 1399px) {
+    .support-faq__col {
+        padding: 10px;
+    }
+    .support-faq {
+        width: calc(100% + 20px);
+        margin: -10px;
+    }
+}
+@media (max-width: 767px) {
+    .support-faq__col:last-child {
+        display: none;
+    }
+    .support-faq__col {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .support-faq {
+        width: 100%;
+        margin: -10px 0;
+        flex-wrap: wrap;
+    }
+}
